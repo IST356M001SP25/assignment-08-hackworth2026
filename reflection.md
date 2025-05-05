@@ -23,3 +23,4 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
+This assignment was a bit more of a struggle than the other assignemnts, I had to do some background research and revist the textbook, to understand the flow of the code. And just get a better handle the assignment, when it comes to visualization and the mapping that goes into it. Overall, this was a challengeing experince that was a bit more than I could handle at times. Nonetheless, was entirely doable after some time to reflect and take another perspective.
