@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 st.set_page_config(layout="wide")
 
-tickets_df = pd.read_csv('./cache/tickets_in_top_locations.csv')
+tickets_df = pd.read_csv('assignment08Hackworth2026/cache/tickets_in_top_locations.csv')
 
 # Page title and description
 st.header('Syracuse Parking Ticket Hotspots')

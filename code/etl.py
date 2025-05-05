@@ -25,18 +25,18 @@ def tickets_in_top_locations(violations_df: pd.DataFrame, threshold=1000) -> pd.
 
 if __name__ == '__main__':
     print("Starting ETL pipeline...")
-    input_file = './cache/final_cuse_parking_violations.csv'
+    input_file = 'assignment08Hackworth2026/cache/final_cuse_parking_violations.csv'
     print(f"Loading data from {input_file}")
     violations_data = pd.read_csv(input_file)
 
     output_top_locations = top_locations(violations_data)
-    output_top_locations.to_csv('./cache/top_locations.csv', index=False)
+    output_top_locations.to_csv('assignment08Hackworth2026/cache/top_locations.csv', index=False)
     print("Saved top locations data.")
 
     output_mappable = top_locations_mappable(violations_data)
-    output_mappable.to_csv('./cache/top_locations_mappable.csv', index=False)
+    output_mappable.to_csv('assignment08Hackworth2026/cache/top_locations_mappable.csv', index=False)
     print("Saved mappable top locations data.")
 
     output_tickets = tickets_in_top_locations(violations_data)
-    output_tickets.to_csv('./cache/tickets_in_top_locations.csv', index=False)
+    output_tickets.to_csv('assignment08Hackworth2026/cache/tickets_in_top_locations.csv', index=False)
     print("Saved tickets in top locations data.")

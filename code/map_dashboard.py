@@ -13,7 +13,7 @@ ZOOM = 14                   # zoom level
 VMIN = 1000                 # min value for color scale
 VMAX = 5000                 # max value for color scale
 
-df = pd.read_csv('./cache/top_locations_mappable.csv')
+df = pd.read_csv('assignment08Hackworth2026/cache/top_locations_mappable.csv')
 
 # Page header
 st.title('Syracuse Parking Ticket Hotspots')

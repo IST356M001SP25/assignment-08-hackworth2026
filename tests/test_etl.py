@@ -1,5 +1,5 @@
 import pandas as pd
-from code.etl import top_locations, top_locations_mappable, tickets_in_top_locations
+from assignment08Hackworth2026.code.etl import top_locations, top_locations_mappable, tickets_in_top_locations
 
 def test_should_pass():
     print("\nAlways True!")
@@ -7,7 +7,7 @@ def test_should_pass():
 
 def test_top_locations():
     # Arrange the test variables
-    violations_df = pd.read_csv('./cache/final_cuse_parking_violations.csv')
+    violations_df = pd.read_csv('assignment08Hackworth2026/cache/final_cuse_parking_violations.csv')
     expect_row_count = 135
     expect_col_count = 2
     expect_col_names = ['amount', 'location']
@@ -27,7 +27,7 @@ def test_top_locations():
 
 def test_top_locations_mappable():
     # Arrange the test variables
-    violations_df = pd.read_csv('./cache/final_cuse_parking_violations.csv')
+    violations_df = pd.read_csv('assignment08Hackworth2026/cache/final_cuse_parking_violations.csv')
     expect_row_count = 135
     expect_col_count = 4
     expect_col_names = ['amount', 'lat', 'location','lon'] # order does not matter
@@ -47,7 +47,7 @@ def test_top_locations_mappable():
 
 def test_tickets_in_top_locations():
         # Arrange the test variables
-    violations_df = pd.read_csv('./cache/final_cuse_parking_violations.csv')
+    violations_df = pd.read_csv('assignment08Hackworth2026/cache/final_cuse_parking_violations.csv')
     expect_row_count = 8109
     expect_col_count = 11
     expect_col_names = ['location','ticket_number','issued_date',
